@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <meta name="author" content="Kozak Mira">
+    <title>Tema bootstrap by Kozak Mira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        .carousel-item img {
+            width: auto;
+            height: 400px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 500px;
+            height: 300px;
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        h3 {
+            color: #007bff;
+        }
+
+        p {
+            color: #6c757d;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .badge-success {
+            color: #28a745; /* sau altă culoare la alegere */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Carousel în partea de sus a paginii pentru a fii Header -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="1.jpeg" class="d-block w-100" alt="Prima imagine din carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="4.jpeg" class="d-block w-100" alt="A doua imagine din carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="7.jpeg" class="d-block w-100" alt="A treia imagine din carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="8.jpeg" class="d-block w-100" alt="A patra imagine din carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="10.jpeg" class="d-block w-100" alt="A cincea imagine din carousel">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Meniul de navigație orizontal -->
+        <div class="navbar">
+            <a href="index.html"> 
+                <img src="logo.png" width="150px" height="150px" alt="Logo">
+            </a>
+            <a href="#despre-noi">Despre Noi</a>
+            <a href="#servicii">Servicii</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Secțiunea 1 -->
+        <section id="despre-noi">
+            <h2>Despre Noi</h2>
+            <h3>Misiunea Noastră: Transformarea Comunităților Prin Voluntariat Activ</h3>
+            <p>"Dăruiește Timp" își propune să creeze o schimbare semnificativă în comunități prin mobilizarea
+                studenților în proiecte de voluntariat. Misiunea noastră este să construim punți între tineri și
+                nevoile comunității, stimulând dezvoltarea personală și contribuind la un impact social pozitiv.</p>
+            <h3>Proiecte Inovatoare: Educație, Sănătate și Sustenabilitate</h3>
+            <p>Descoperiți proiectele noastre inovatoare care acoperă domenii precum educație, sănătate și
+                sustenabilitate. De la programe educaționale pentru copii defavorizați la inițiative de mediu, ne
+                străduim să abordăm provocările actuale și să contribuim la o schimbare durabilă în societate.</p>
+        </section>
+
+        <!-- Secțiunea 2 -->
+        <section id="servicii">
+            <h2>Servicii</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Asistență Alimentară <span class="badge badge-success">Disponibil</span> </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Distribuție de alimente pentru cei aflați în nevoie. Programe de educație
+                        alimentară și gătit sănătos</p>
+                    <img src="3.jpeg" class="card-img-top" alt="Asistență Alimentară">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Proiecte de Mediu <span class="badge badge-success">Disponibil</span> </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Campanii de ecologizare și protejare a mediului înconjurător. Activități de
+                        plantare a arborilor și conservare a resurselor naturale.</p>
+                    <img src="5.jpeg" class="card-img-top" alt="Schita unui proiect de mediu">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Activități Culturale și de Recreere <span class="badge badge-success">Disponibil</span> </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Evenimente și activități culturale pentru a promova diversitatea. Programe de
+                        recreere și divertisment pentru toate vârstele.</p>
+                    <img src="6.jpeg" class="card-img-top" alt="Poza facuta la una dintre activitatile noastre de recreere">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Asistență Socială <span class="badge badge-success">Disponibil</span> </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Consiliere și suport emoțional pentru persoanele aflate în dificultate.
+                        Program de intervenție în caz de crize sau dezastru.</p>
+                    <img src="2.jpeg" class="card-img-top" alt="Grupul nostru unit de oameni care ofera asistenta sociala">
+                </div>
+            </div>
+        </section>
+
+        <!-- Secțiunea 3 -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Ne puteți contacta oricând în unul din următoarele moduri:</p>
+            <h3>1.Telefonic</h3>
+            <p>Apelând cu încredere la: 0754111333</p>
+            <h3>2.Prin Email</h3>
+            <p>Ne găsiți ușor la adresa: daruieste-timp@ong.ro</p>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Daruieste Timp. Toate drepturile rezervate.</p>
+        <p>Contact: daruieste-timp@ong.ro</p>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ebf7b83416.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
